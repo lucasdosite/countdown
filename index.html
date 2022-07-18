@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Koulen&family=Merriweather+Sans&family=Rajdhani&family=Spline+Sans+Mono&family=Teko&family=Tiro+Gurmukhi&display=swap"
+        rel="stylesheet">
+
+    <script src="/src/scripts/script.js"></script>
+
+    <title>Countdown - Techno Luke</title>
+</head>
+
+<body>
+
+    <div class="container-flex">
+        <img class="top-image" src="/assets/images/top-image.svg">
+
+        <div class="left">
+
+            <h1 class="title">
+                Ready to launch in...
+            </h1>
+
+            <div class="counter">
+                <div>
+                    <div class="smalltext">Dias</div>
+                    <span class="days" id="day"></span>
+                    <span>:</span>
+                </div>
+
+                <div>
+                    <div class="smalltext">Horas</div>
+                    <span class="hours" id="hour"></span>
+                    <span>:</span>
+                </div>
+
+                <div>
+                    <div class="smalltext">Minutos</div>
+                    <span class="minutes" id="minute"></span>
+                    <span>:</span>
+                </div>
+
+                <div>
+                    <div class="smalltext">Segundos</div>
+                    <span class="seconds" id="second"></span>
+                </div>
+            </div>
+
+            <span class="subscribe">Inscreva-se para saber mais sobre o lançamento</span>
+
+            <a href="#abrirModal">
+                <button class="subscribe-button">Inscreva-se</button>
+            </a>
+
+
+        </div>
+
+
+        <div class="right">
+            <img class="rocket" src="/assets/images/rocket.svg">
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="abrirModal" class="modal">
+
+
+        <div class="card">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <div class="container">
+                <form id="contact" action="" method="post">
+                    <h3>Não perca esta oportunidade!</h3>
+                    <h4>Um passo importantíssimo rumo ao sucesso.</h4>
+                    <fieldset>
+                        <input placeholder="Nome" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="E-mail" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Telefone" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Conte-nos um pouco sobre você aqui..." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Inscrever-se
+                            agora</button>
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+<footer>
+    <img class="bottom-image" src="/assets/images/bottom-image.svg">
+</footer>
+
+</html>
